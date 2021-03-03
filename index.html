@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facul RAD</title>
+</head>
+<body>
+    <form action="">
+    <h1>Sistema de registro de notas</h1>
+
+    <label for="nome-aluno">Nome do aluno: </label>
+    <input type="text" name="nome-aluno" id="nome-aluno">
+
+    <label for="materia">Matéria: </label>
+
+    <select name="materia" id="materia" required>
+        <option value="" disabled selected>Selecione a matéria</option>
+        <option value="dev-c">Desenvolvimento em C</option>
+        <option value="dev-rad">Desenvolvimento RAD</option>
+        <option value="eng-soft">Engenharia de Softwares</option>
+    </select>
+
+    <label for="nota-aluno">Nota do aluno: </label>
+    <input type="number" name="nota-aluno" id="nota-aluno" min="0" max="10">
+
+    <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
