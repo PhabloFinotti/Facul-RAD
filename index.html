@@ -4,29 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Facul RAD</title>
 </head>
 <body>
+    <section id="envio-notas">
     <form action="">
-    <h1>Sistema de registro de notas</h1>
+        <h1>Sistema de registro de notas</h1>
 
-    <label for="nome-aluno">Nome do aluno: </label>
-    <input type="text" name="nome-aluno" id="nome-aluno">
 
-    <label for="materia">Matéria: </label>
+        <label for="matricula-aluno">Matrícula do aluno: </label>
+        <input type="text" name="matricula-aluno" id="matricula-aluno" placeholder="202003999999">
+  
+        <input type="button" value="Procurar">
+        <input type="text" id="nome-aluno" name="nome-aluno" value="Nome do Aluno" readonly><br><br>
+        
+        <hr>
+        <br>
+        <label for="disciplina">Disciplina: </label>
 
-    <select name="materia" id="materia" required>
-        <option value="" disabled selected>Selecione a matéria</option>
-        <option value="dev-c">Desenvolvimento em C</option>
-        <option value="dev-rad">Desenvolvimento RAD</option>
-        <option value="eng-soft">Engenharia de Softwares</option>
-    </select>
+        <select name="disciplina" id="disciplina" required>
+            <option value="" disabled selected>Selecione a disciplina</option>
+            <option value="dev-c">Desenvolvimento em C</option>
+            <option value="dev-rad">Desenvolvimento RAD</option>
+            <option value="eng-soft">Engenharia de Softwares</option>
+        </select>
+        <br>
+        <br>
 
-    <label for="nota-aluno">Nota do aluno: </label>
-    <input type="number" name="nota-aluno" id="nota-aluno" min="0" max="10">
 
-    <input type="submit" value="Enviar">
+        <label for="nota-aluno">Nota do aluno: </label>
+        <input type="number" name="nota-aluno" id="nota-aluno" min="0" max="10">
 
-    </form>
+        <input type="submit" value="Enviar">
+
+        </form>
+    </section>
+
+
+        <table border="1" width="100%">
+            <tr>
+            <td bgcolor="#000000"><font color="#FFFFFF"><b>Disciplina</b></font></td>
+            <td bgcolor="#000000"><font color="#FFFFFF"><b>Nota</b></font></td>
+            <td bgcolor="#000000"><font color="#FFFFFF"><b>Status</b></font></td>
+            </tr>
+            <tr>
+            <td>Desenvolvimento em C</td>
+            <td>10,00</td>
+            <td>Aprovado</td>
+            </tr>
+            <tr>
+            <td>Desenvolvimento RAD</td>
+            <td>5,00</td>
+            <td>Reprovado</td>
+            </tr>
+            <tr>
+            <td>Engenharia de Softwares</td>
+            <td>10,00</td>
+            <td>Aprovado</td>
+            </tr>
+            </table>
 </body>
 </html>
